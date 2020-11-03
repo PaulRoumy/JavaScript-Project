@@ -1,0 +1,16 @@
+.H1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.button{
+    width: 60px;
+    height: 30px;
+
+}
+.bouton{
+    display: flex;
+    justify-content: space-around;
+}
