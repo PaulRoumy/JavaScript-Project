@@ -1,0 +1,22 @@
+.invisible {
+    display: none;
+}
+body {
+    background-color: aquamarine;
+}
+button {
+    margin-bottom : 20px;
+    width: 80px;
+}
+img {
+    margin-bottom : 20px;
+}
+#french {
+    background-color: blue;
+}
+#italian {
+    background-color: red;
+}
+#brasil {
+    background-color: green;
+}

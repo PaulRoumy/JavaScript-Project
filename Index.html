@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css".css">
-    <title>Invitation au voyage</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Accueuil</title>
 </head>
+
 <body>
-    <h1>Invitation au voyage...</h1>
+    <div>
+        <h1>Invitation aux voyages</h1>
+        <h2>Où souhaitez-vous allez ?</h2>
+        <div>
+            <a href="France.html"><button id="french">France</button></a>
+            <a href="Italie.html"><button id="italian">Italie</button></a>
+            <a href="brasil.html"><button id="brasil">Brésil</button></a>
+        </div>
+        <div>
+            <img src="frenchflag.jpg" alt="drapeau français" id="frenchf" class="invisible" width="200px">
+            <img src="italianflag.jpg" alt="drapeau italien" id="italianf" class="invisible" width="200px">
+            <img src="brasilianflag.jpg" alt="drapeau bresilien" id="brasilianf" class="invisible" width="200px">
+        </div>
+    </div>
+    <div>
+        <input type="text" id="inputTxt" name="nom" class="form-control" placeholder="écrivez votre prénom ici"
+            value="">
+        <button type="button" id="mySendBtn">SEND</button>
 
-    <p>Quel pays vous attire le plus</p>
-
-    <button>a la France</button>
-    <button>l'Italie</button>
-    <button>le Brésil</button>
-    
+        <h2>Nous pouvons aussi vous proposer les pays suivants : </h2>
+    </div>
 
 
     <script src="index.js"></script>
 </body>
+
 </html>
