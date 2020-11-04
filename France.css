@@ -14,3 +14,15 @@
     display: flex;
     justify-content: space-around;
 }
+body{
+    background-image: url(Image/carte.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+p{
+    color: blue;
+}
+.wiki{
+    display: flex;
+    justify-content: center;
+}
