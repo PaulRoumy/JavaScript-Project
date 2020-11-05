@@ -58,11 +58,6 @@ function displayTxt (e) {
     // je l'affiche dans ma console
   console.log("ceci est la valeur de l'input texte : " + inputValue); 
   
-//   // je l'affiche dans le html :
-//     let paragraph = document.getElementsByClassName("textaremplir")
-//     console.log(paragraph)
-//     let textDuP = paragraph.innerText = inputValue;
-
 let div = document.getElementsByTagName('div')[0]
 console.log(div)
 
@@ -72,7 +67,12 @@ newH2.textContent = 'Bonjour ' + inputValue
 div.appendChild(newH2);
 console.log(div)
 console.log(newH2)
+// je stocke mon inputValue dans le local storage pour que Paul puisse la récupérer sur sa page france 
+localStorage.setItem('name', inputValue);
 }
+
+// je stocke mon inputValue dans le local storage pour que Paul puisse la récupérer sur sa page france 
+
 // Je crée un tableau : 
 let countriesArray = ['Japon', 'Canada', 'Thaïlande', 'Chili', 'Norvège', 'Islande', 'Portugal'];
 let div4 = document.getElementsByTagName('div')[3]
@@ -83,6 +83,4 @@ for (let i = 0; i < countriesArray.length; i++) {
     let li = document.createElement('li')
     li.textContent = countriesArray[i]
     ul.appendChild(li);
-
-    // console.log(countriesArray[i])
 }
