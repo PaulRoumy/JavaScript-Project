@@ -41,17 +41,40 @@ function moreTxt(e) {
     "L'art brésilien a été développé depuis le xvie siècle dans des styles différents qui vont du style baroque (le style dominant au Brésil jusqu'au début du xixe siècle) à l'art abstrait, en passant par le romantisme, le modernisme, l'expressionnisme, le cubisme, le surréalisme. Le cinéma brésilien remonte à la fin du xixe siècle et a gagné au cours des dernières années une nouvelle reconnaissance internationale, avec l'avènement de films connus au-delà des frontières nationales, comme la Cité de Dieu, qui a reçu de nombreux prix internationaux, quatre nominations aux oscars et a été élu parmi les 100 meilleurs films de tous les temps par le Time magazine.",
   ];
   let moreInfo = document.querySelector(".moreInfo");
-  body.removeChild(moreInfo);
+//   body.removeChild(moreInfo);
   if (body.children[6] == undefined) {
     console.log("je rentre dans le premier if donc je fais le taf");
-    for (i = 0; i < arrayParagraphs.length; i++) {
-      console.log("je rentre dans la boucle");
-      let p2 = document.createElement("p");
-      p2.innerHTML = arrayParagraphs[i];
-      body.appendChild(p2);
-    }
+    // for (i = 0; i < arrayParagraphs.length; i++) {
+    //   console.log("je rentre dans la boucle");
+    //   let p2 = document.createElement("p");
+    //   p2.innerHTML = arrayParagraphs[i];
+    //   body.appendChild(p2);
+    // }
+
+    arrayParagraphs.forEach(function (item) {
+            console.log("je rentre dans la boucle");
+            let p2 = document.createElement("p");
+            p2.innerHTML = item;
+            body.appendChild(p2);
+        });
   } else {
     console.log("je rentre dans le else donc return, donc il ne se passe rien");
     return;
   }
 }
+
+
+// arrayParagraphs.foreach(function (item) {
+//     console.log("je rentre dans la boucle");
+//     let p2 = document.createElement("p");
+//     p2.innerHTML = arrayParagraphs[i];
+//     body.appendChild(p2);
+// })
+
+
+// for (i = 0; i < arrayParagraphs.length; i++) {
+//     console.log("je rentre dans la boucle");
+//     let p2 = document.createElement("p");
+//     p2.innerHTML = arrayParagraphs[i];
+//     body.appendChild(p2);
+//   }
