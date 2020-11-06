@@ -113,7 +113,6 @@ if (!div.children[4]) {
             localStorage.setItem('name', inputValue);
       break;
   }
-
 }
 
 else {
@@ -152,7 +151,6 @@ else {
       break;
   }
 }
-
 }
 
 // Je crée un tableau :
