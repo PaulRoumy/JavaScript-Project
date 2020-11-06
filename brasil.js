@@ -27,8 +27,6 @@ function changeColor (e) {
 newP.addEventListener('mouseout', colorBack)
 function colorBack (e) {
     newP.style.color='black'
-    // body.children[5].remove()
-    
     let moreInfo = document.querySelector('.moreInfo')
     if (moreInfo) {
        body.removeChild(moreInfo) 
@@ -40,7 +38,7 @@ function colorBack (e) {
 
 newP.addEventListener('click', moreTxt)
 function moreTxt (e) {
-    let arrayParagraphs = ["L'influence de la culture européenne sur le Brésil se retrouve dans la langue (portugais), la religion (catholicisme) et l'architecture439. La culture brésilienne tient également des cultures africaines, amérindiennes et des pays européens (autres que le Portugal). Plusieurs aspects de la culture brésilienne ont été fortement influencés par l'arrivée des immigrants italiens, allemands et espagnols (trois des principaux groupes en provenance d'Europe) qui se sont installés en grand nombre dans les régions du Sud et du Sud-Est du Brésil440. Les Amérindiens, eux, ont influencé la langue (plusieurs mots du portugais brésilien sont dérivés des anciennes langues indigènes), tandis que les Africains ont laissé leur empreinte sur la musique, la cuisine et la danse441 (notamment en donnant naissance à la capoeira, un art martial inventé par les esclaves venus d'Afrique442).", "L'art brésilien a été développé depuis le xvie siècle dans des styles différents qui vont du style baroque (le style dominant au Brésil jusqu'au début du xixe siècle) à l'art abstrait, en passant par le romantisme, le modernisme, l'expressionnisme, le cubisme, le surréalisme. Le cinéma brésilien remonte à la fin du xixe siècle et a gagné au cours des dernières années une nouvelle reconnaissance internationale, avec l'avènement de films connus au-delà des frontières nationales, comme la Cité de Dieu, qui a reçu de nombreux prix internationaux, quatre nominations aux oscars443 et a été élu parmi les 100 meilleurs films de tous les temps par le Time magazine."]
+    let arrayParagraphs = ["L'influence de la culture européenne sur le Brésil se retrouve dans la langue (portugais), la religion (catholicisme) et l'architecture. La culture brésilienne tient également des cultures africaines, amérindiennes et des pays européens (autres que le Portugal). Plusieurs aspects de la culture brésilienne ont été fortement influencés par l'arrivée des immigrants italiens, allemands et espagnols (trois des principaux groupes en provenance d'Europe) qui se sont installés en grand nombre dans les régions du Sud et du Sud-Est du Brésil. Les Amérindiens, eux, ont influencé la langue (plusieurs mots du portugais brésilien sont dérivés des anciennes langues indigènes), tandis que les Africains ont laissé leur empreinte sur la musique, la cuisine et la danse (notamment en donnant naissance à la capoeira, un art martial inventé par les esclaves venus d'Afrique).", "L'art brésilien a été développé depuis le xvie siècle dans des styles différents qui vont du style baroque (le style dominant au Brésil jusqu'au début du xixe siècle) à l'art abstrait, en passant par le romantisme, le modernisme, l'expressionnisme, le cubisme, le surréalisme. Le cinéma brésilien remonte à la fin du xixe siècle et a gagné au cours des dernières années une nouvelle reconnaissance internationale, avec l'avènement de films connus au-delà des frontières nationales, comme la Cité de Dieu, qui a reçu de nombreux prix internationaux, quatre nominations aux oscars et a été élu parmi les 100 meilleurs films de tous les temps par le Time magazine."]
  
     if (body.children[6] == undefined) {
         console.log('je rentre dans le premier if donc je fais le taf')
@@ -52,7 +50,7 @@ function moreTxt (e) {
     }  
 }
     else {
-        console.log('je rentre dans le else donc return');
+        console.log('je rentre dans le else donc return, donc il ne se passe rien');
         return
     }
    
